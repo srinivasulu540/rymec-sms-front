@@ -1,0 +1,338 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+  }
+  
+  
+  /* Basic styles */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+  
+    padding: 0;
+  }
+  /* Grid container styles */
+  .form-container {
+    position: absolute;
+    top: 80px;
+    width: calc(100% - 260px);
+    min-height: calc(100vh - 300px);
+    left: 260px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    max-width: 1000;
+    margin: 0 auto;
+    
+    padding: 20px;
+  }
+
+  
+  /* Form field styles */
+  .form-field label {
+    font-size: 15px;
+    margin-bottom: 5px;
+    display: block;
+    color: #000000;
+  }
+  .form-field input {
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #299B63 ;
+    transition: border-color 0.2s ease-in-out;
+    width: 100%;
+    margin-top: 5px;
+    height: 50px;
+    
+  }
+  .form-field input:focus {
+    outline: none;
+    border: 2px solid #299B63;
+  }
+  
+  .form-field-add input {
+    font-size: 16px;
+    padding: 10px;
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #299B63 ;
+    transition: border-color 0.2s ease-in-out;
+    width: 100%;
+    margin-top: 5px;
+  }
+  .form-field-add textarea{
+    font-size: 16px;
+    padding: 10px;
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #299B63 ;
+    transition: border-color 0.2s ease-in-out;
+    width: 100%;
+    margin-top: 5px;
+    resize: none;
+  }
+ 
+  .form-field-add textarea:focus {
+    outline: none;
+    border: 2px solid #299B63;
+  }
+  
+  .form-field select {
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #299B63 ;
+    transition: border-color 0.2s ease-in-out;
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+  }
+  .form-field select:focus {
+    outline: none;
+    border: 2px solid #299B63;
+  }
+  .submit-btn {
+    border-radius: 4px;
+    color: #f5f5f5;
+    border-color: #299B63;
+    padding: 12px;
+    font-size: 15px; 
+    background-color: #299B63;
+    margin-top:28px;
+    margin-left:2px;
+  }
+  .submit-btn  a {
+    border-radius: 4px;
+    color: #f5f5f5;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px; 
+    background-color: #299B63;
+  }
+  .submit-btn:hover{
+    border-radius: 4px;
+    color: #299B63;
+    border-color: #299B63;
+    padding: 10px;
+    font-size: 15px; 
+    background-color: #f5f5f5;
+  
+  }
+  
+  .cancel-btn {
+    border-radius: 4px;
+    color: #f5f5f5;
+    border-color: #f0311b;
+    padding: 10px;
+    font-size: 15px; 
+    background-color: #f0311b;
+  }
+  .cancel-btn  a {
+    border-radius: 4px;
+    color: #f5f5f5;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px; 
+    background-color: #f0311b;
+  }
+  .cancel-btn:hover{
+    border-radius: 4px;
+    color: #f0311b;
+    border-color: #f0311b;
+    padding: 10px;
+    font-size: 15px; 
+    background-color: #f5f5f5;
+  }
+
+  .std-btn{
+    display: block;
+    
+  }
+  .download-btn {
+    border-radius: 4px;
+    color: #f5f5f5;
+    border-color: #299B63;
+    padding: 10px;
+    font-size: 15px; 
+    background-color: #299B63;
+  }
+  .download-btn  a {
+    border-radius: 4px;
+    color: #f5f5f5;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px; 
+    background-color: #299B63;
+  }
+  .download-btn:hover{
+    border-radius: 4px;
+    color: #299B63;
+    border-color: #299B63;
+    padding: 10px;
+    font-size: 15px; 
+    background-color: #f5f5f5;
+  }
+  .form-field input[type=file]{
+    
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border: none;
+  }
+  .form-field input[type=file]::file-selector-button{
+    background:  #1d5674;
+    
+  }
+  
+  .form-field-excel select {
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #299B63 ;
+    transition: border-color 0.2s ease-in-out;
+    width: 200px;
+    
+  }
+  .form-field-excel select:focus {
+    outline: none;
+    border: 2px solid #299B63;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1115px) {
+    .form-container {
+      width: calc(100% - 100px);
+      left: 75px;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 10px;
+    }
+    .form-field label {
+      font-size: 16px;
+    }
+    .form-field input {
+      font-size: 14px;
+    }
+    .form-field select {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 800px) {
+    .form-container {
+      /* width: calc(100% - 100px); */
+      left: 75px;
+      grid-template-columns: repeat(1, 1fr);
+      padding: 10px;
+    }
+    .form-field label {
+      font-size: 16px;
+    }
+    .form-field input {
+      font-size: 14px;
+    }
+    .form-field select {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 480px) {
+    .form-container {
+      grid-template-columns: 1fr;
+    }
+    .form-field label {
+      font-size: 14px;
+    }
+    .form-field input {
+      font-size: 12px;
+    }
+    .form-field select {
+      font-size: 12px;
+    }
+  }
+
+
+  .wrapper{
+    position: relative;
+  }
+
+  .wrapper input{
+    width: 200px;
+    height: 40px;
+    padding: 0 2px;
+    outline: none;
+    font-size: 15px;
+    color: grey;
+    border-radius: 10px;
+    border: 2px solid #333;
+    margin-right: 100px;
+  }
+
+  .wrapper label{
+    position: absolute;
+    top: 20px;
+    left:115px;
+    transform: translateY(-50%);
+    color: grey;
+    font-size: 15px;
+    padding: 0 5px;
+    pointer-events: none;
+    transition: 0.5s;
+    margin-right: 100px;
+  }
+
+  .wrapper input:focus ~ label,
+  .wrapper input:valid ~ label {
+    top: 0;
+    color: #1c0202;
+    background-color: #f5ebce;
+    font-size: 15px;
+
+
+  }
+
+  .wrapperinput:focus,
+  .wrapperinput:valid {
+    border: 2px solid #f0311b;
+    font-size: 15px;
+  }
+
+  .choose{
+     position: absolute; 
+  }
+
+  .upload-box{
+    font-size: 16px;
+    border-radius: 50px;
+    width: 200px;
+    outline: none;
+
+  }
+
+  ::-webkit-file-upload-button{
+  color: white;
+  background: #1d5674;
+  padding: 20px;
+  border: none;
+  border-bottom: 50px;
+  outline:none;     
+  }
+
+  ::-webkit-file-upload-button{
+    background: #f0311b;
+  }
+
+  .h2{
+    align-items: center;
+    margin-right: 50px;
+  }
