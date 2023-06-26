@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/form.css">
+  <title>Add Student</title>
+</head>
+
+<body>
+<div class="container">
+  <div class="topbar">
+    <div class="logo">
+      <h1><b>RYMEC</b></h1>
+    </div>
+    
+    <div class="user">
+      <img src="C:\Users\NANDISH\Desktop\VS CODE\Project\3135715.png" alt="">
+      
+  </div>
+  
+  </div>
+  <div class="sidebar">
+    <ul>
+      <li>
+        <a href="Dashboard.html">
+          <i class="fas fa-home"></i>
+          <div>Home</div>
+        </a>
+      </li>
+      <li>
+        <a href="student.html">
+          <i class="fas fa-user-graduate"></i>
+          <div>Students</div>
+        </a>
+      </li>
+      <li>
+        <a href="staff.html">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <div>Staff</div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="#">
+          <i class="fas fa-solid fa-chart-bar"></i>
+          <div>Timetable</div>     
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-solid fa-cog"></i>
+          <div>Settings</div>     
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="form-container">
+    <label >Student Details</label>
+      <div class="student">
+      <div class="form-field">
+      <label >Student Name:</label>
+      <input type="text" id="StdName" placeholder="Enter Student Name">
+  </div>
+  <div class="form-field">
+    <label >USN:</label>
+    <input type="text" id="FatherName" placeholder="Enter ur name">
+  </div>
+  <div class="form-field">
+    <label >Branch:</label>
+    <select name="" id="">
+      <option value="">Select branch</option>
+      <option value="" >CSE</option>
+      <option value="">EEE</option>
+      <option value="">AIML</option>
+      <option value="">ECE</option>
+      <option value="">CIVIL</option>
+      <option value="">ISE</option>
+      <option value="">DSA</option>
+    </select>
+  </div>
+  <div class="form-field">
+    <label>Section</label>
+              <select name="Select Section" id="SocialCat">
+                <option value="select">Select Section</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+              </select>
+  </div>
+  <div class="form-field">
+    <label>Semester</label>
+              <select name="Select Semester" id="SocialCat">
+                <option value="select">Select Semester</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+              </select>
+  </div>
+  <div class="form-field">
+    <label >Student Batch:</label>
+    <input type="number" placeholder="YYYY" min="1999" max="2050">
+  </div>
+  <div class="form-field">
+    <label >Roll number:</label>
+    <input type="text" id="Roll Number" placeholder="Enter Ur Roll Number">
+  </div>
+  <div class="form-field">
+    <label >Date Of Birth:</label>
+    <input type="date" id="DOB" >
+  </div>
+  
+  <div class="form-field">
+    <label>Gender:</label>
+    <select name="gender" id="Gender" >
+      <option value="select">Select the Gender </option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="others">Others</option>
+     </select>
+  </div>
+  <div class="form-field">
+    <label >Religion:</label>
+              <select name="religion" id="Religion">
+                <option value="Select">Select Religion</option>
+                <option value="hindu">Hindu</option>
+                <option value="muslim">Muslim</option>
+                <option value="christian">Christian</option>
+                <option value="others">Others</option>
+              </select>&nbsp;
+  </div>
+  <div class="form-field">
+    <label >Nationality:</label>
+              <select name="religion" id="Select Nationality">
+                <option value="Select">Select Nationality</option>
+                <option value="Indian">Indian</option>
+                <option value="Other">Other</option>
+              </select>&nbsp;
+  </div>
+  <div class="form-field">
+    <label >Date of Joining:</label>
+    <input type="date" placeholder="YYYY" min="1999" max="2050">
+  </div>
+  <div class="form-field">
+    <label >Blood Group:</label>
+              <select name="Blood Group" id="Select Blood Group">
+                <option value="Select">Select Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                
+              </select>&nbsp;
+  </div>
+  <div class="form-field">
+    <label >Mother Tongue:</label>
+          <select name="mother tongue" id="MotheTongue" >
+              <option value="select mother tongue">Select Language</option>
+              <option value="Kannada">Kannada</option>
+              <option value="Hindi">Hindi</option>
+              <option value="Urdu">Urdu</option>
+              <option value="English">English</option>
+              <option value="Marathi">Marathi</option>
+              <option value="Tamil">Tamil</option>
+              <option value="Telugu">Telugu</option>
+          </select>
+  </div>
+  <div class="form-field">
+    <label >Email:</label>
+      <input type="email" placeholder="Enter Email id" id="SocialSubCat" >
+  </div>
+  <div class="form-field">
+    <label>Mobile:</label>
+    <input type="text" placeholder="Enter Mobile number">
+</div>
+<div class="form-field">
+  <label>Parent Mobile Number:</label>
+  <input type="text" placeholder="Enter Parent Mobile Number:">
+</div>
+  <div class="form-field">
+    <label >Transport:</label>
+    <select name="Transport" id="Transport Mode" >
+        <option value="Select Transport Mode">Select Transport Mode</option>
+        <option value="Bus">Bus</option>
+        <option value="none">None</option>
+    </select>
+  </div>
+  
+  <div class="form-field">
+    <label >Residential Address:</label>
+      <textarea name="" id="" cols="4" rows="3" height="50px"></textarea>
+  </div>
+  <div class="form-field">
+    <label >Permanent Address:</label>
+      <textarea name="" id="" cols="4" rows="3" height="50px"></textarea>
+  </div>
+  <div class="form-field">
+    <label >Hostellet:</label>
+    <select name="mother tongue" id="Hostellet" >
+        <option value="">Hostellet</option>
+        <option value="">Yes</option>
+        <option value="">No</option>
+    </select>
+</div>
+</div>
+</div>
+<div class="form-container1">
+ <h2>Parents Details:</h2>
+  <br>
+  <label>Father Details</label>  
+  <div class="father">
+        <div class="form-field">
+            <label>Father name:</label>
+            <input type="text" placeholder="Enter Father name">
+        </div>
+        <div class="form-field">
+            <label>Qualification:</label>
+            <input type="text" placeholder="Enter Qualification">
+        </div>
+        <div class="form-field">
+            <label>Profession:</label>
+            <input type="text" placeholder="Enter Profession">
+        </div>
+        <div class="form-field">
+            <label>Annual Income:</label>
+            <input type="text" placeholder="Enter Annual Income">
+        </div>
+        <div class="form-field">
+            <label>Mobile:</label>
+            <input type="text" placeholder="Enter Mobile number">
+        </div>
+        <div class="form-field">
+            <label>Email:</label>
+            <input type="email" placeholder="Enter Email id">
+        </div>
+      </div>
+      <label >Mother Details</label>
+        <div class="mother">
+            <div class="form-field">
+                <label>Mother name:</label>
+                <input type="text" placeholder="Enter Mother name">
+            </div>
+            <div class="form-field">
+                <label>Qualification:</label>
+                <input type="text" placeholder="Enter Qualification">
+            </div>
+            <div class="form-field">
+                <label>Profession:</label>
+                <input type="text" placeholder="Enter Profession">
+            </div>
+            <div class="form-field">
+                <label>Annual Income:</label>
+                <input type="text" placeholder="Enter Annual Income">
+            </div>
+            <div class="form-field">
+                <label>Mobile:</label>
+                <input type="text" placeholder="Enter Mobile number">
+            </div>
+            <div class="form-field">
+                <label>Email:</label>
+                <input type="email" placeholder="Enter Email id">
+            </div>
+          </div>
+          <label for="">Guardian Details</label>
+          <div class="guardian">
+            <div class="form-field">
+                <label>Guardian name:</label>
+                <input type="text" placeholder="Enter Guardian name">
+            </div>
+            <div class="form-field">
+              <label>Qualification:</label>
+              <input type="text" placeholder="Enter Qualification">
+          </div>
+          <div class="form-field">
+              <label>Profession:</label>
+              <input type="text" placeholder="Enter Profession">
+          </div>
+          <div class="form-field">
+              <label>Annual Income:</label>
+              <input type="text" placeholder="Enter Annual Income">
+          </div>
+          <div class="form-field">
+              <label>Mobile:</label>
+              <input type="text" placeholder="Enter Mobile number">
+          </div>
+          <div class="form-field">
+              <label>Email:</label>
+              <input type="email" placeholder="Enter Email id">
+          </div>
+     </div>
+    </div>
+  </div>
+  </body>
+  </html>

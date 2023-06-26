@@ -1,8 +1,11 @@
 /* Grid container styles */
-.form-container-search {
+.main{
+  overflow-y: hidden;
+}
+.form-container {
     position: relative;
     min-height: calc(100vh - 400px);
-    width: 960px;
+    width: min(100% - 35px);
     background: #f5ebce;
     height:fit-content;
     display: grid;
@@ -14,29 +17,14 @@
     margin-left: 8px;
     padding: 30px;
   }
-
-  form-container-search2 {
-    position: relative;
-    top: 25px;
-    background: #f5ebce;
-    box-shadow: 0 7px 25px rgba(14, 13, 13, 0.08);
-    width: calc(100% - 260px);
-    min-height: calc(100vh - 400px);
-    width: 1220px;
-    height: fit-content;
-    border-radius: 10px;
-    max-width: 1000;
-    margin: 0px;
-    padding: 30px;
-  }
   /* Form field styles */
-  .form-field-search label {
+  .form-field label {
     font-size: 15px;
     margin-bottom: 5px;
     display: block;
     color: #000000;
   }
-  .form-field-search input {
+  .form-field input {
     font-size: 16px;
     padding: 10px;
     border: none;
@@ -46,11 +34,10 @@
     width: 100%;
     margin-top: 5px;
   }
-  .form-field-search input:focus {
+  .form-field input:focus {
     outline: none;
     border: 2px solid #299B63;
   }
-  
   .form-field-add-search input {
     font-size: 16px;
     padding: 10px;
@@ -67,7 +54,7 @@
     border: 2px solid #299B63;
   }
   
-  .form-field-search select {
+  .form-field select {
     font-size: 16px;
     padding: 10px;
     border: none;
@@ -75,6 +62,7 @@
     border: 1px solid #299B63 ;
     transition: border-color 0.2s ease-in-out;
     width: 100%;
+    margin-top: 5px;
   }
   .form-field select:focus {
     outline: none;
@@ -82,21 +70,19 @@
   }    
   .std-btn{
     display: block;
-    
   }
   
-  .submit-btn {
+  .btn1 {
     border-radius: 4px;
     color: #f5f5f5;
     border-color: #299B63;
     padding: 8px;
     font-size: 15px; 
     background-color: #299B63;
-    margin-left: 8px;
-    margin-top: 29px;
-   
+    margin-left: 10px;
+    margin-top: px;
   }
-  .submit-btn  a {
+  .btn1  a {
     border-radius: 4px;
     color: #f5f5f5;
     padding: 10px;
@@ -104,10 +90,7 @@
     font-size: 15px; 
     background-color: #299B63;
   }
-  
-  
-  
-  .submit-btn:hover{
+  .btn1:hover{
     border-radius: 4px;
     color: #299B63;
     border-color: #299B63;
@@ -115,8 +98,7 @@
     font-size: 15px; 
     background-color: #f5f5f5;
   }
-  
-  .cancel-btn {
+  .btn2 {
     border-radius: 4px;
     color: #f5f5f5;
     border-color: #f0311b;
@@ -125,7 +107,7 @@
     background-color: #f0311b;
     margin-left: 5px;
   }
-  .cancel-btn  a {
+  .btn2  a {
     border-radius: 4px;
     color: #f5f5f5;
     padding: 10px;
@@ -133,7 +115,7 @@
     font-size: 15px; 
     background-color: #f0311b;
   }
-  .cancel-btn:hover{
+  .btn2:hover{
     border-radius: 4px;
     color: #f0311b;
     border-color: #f0311b;
@@ -141,6 +123,58 @@
     font-size: 15px; 
     background-color: #f5f5f5;
   }
+  .btn3 {
+    border-radius: 4px;
+    color: #f5f5f5;
+    border-color: #299B63;
+    padding: 8px;
+    font-size: 15px; 
+    background-color: #299B63;
+    margin-left:10px;
+
+  }
+  .btn3 a {
+    border-radius: 4px;
+    color: #f5f5f5;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px; 
+    background-color: #299B63;
+  }
+  .btn3:hover{
+    border-radius: 4px;
+    color: #299B63;
+    border-color: #299B63;
+    padding: 10px;
+    font-size: 15px; 
+    background-color: #f5f5f5;
+  }
+  .btn4 {
+    border-radius: 4px;
+    color: #f5f5f5;
+    border-color: #f0311b;
+    padding: 8px;
+    font-size: 15px; 
+    background-color: #f0311b;
+    margin-left: 5px;
+  }
+  .btn4  a {
+    border-radius: 4px;
+    color: #f5f5f5;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px; 
+    background-color: #f0311b;
+  }
+  .btn4:hover{
+    border-radius: 4px;
+    color: #f0311b;
+    border-color: #f0311b;
+    padding: 10px;
+    font-size: 15px; 
+    background-color: #f5f5f5;
+  }
+  
   .menu{
     width: 300px;
     height: 50px;
@@ -157,19 +191,23 @@
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 7px 25px rgba(14, 13, 13, 0.08);
-    width: 960px;
-    height: fit-content;
-    margin-top: 45px;
+    width: min(100% - 35px);
+    height: 400px;
+    margin-top: 20px;
    margin-left: 8px;
+   overflow-x: scroll;
+   margin-bottom: 30px;
 
 }
 .table-card{
   padding: 10px;
  
 }
+.table-card table{
+  overflow-y: scroll;
+}
 .table-card table,th,tr,td{
   padding: 10px;
-  
   
 }
 .table-card th,td{
@@ -177,8 +215,54 @@
 }
 .table-card th{
   background-color:#1d5674 ;
-  border-radius: 10px;
 }
 .table-card td{
   padding:10px;
+
 }
+@media (max-width: 1115px) {
+  .form-container {
+    padding: 10px;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .form-field label {
+    font-size: 15px;
+  }
+  .form-field input {
+    font-size: 14px;
+  }
+  .form-field select {
+    font-size: 14px;
+  }
+}
+@media (max-width: 800px) {
+  .form-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+  }
+  .form-field label {
+    font-size: 16px;
+  }
+  .form-field input {
+    font-size: 14px;
+  }
+  .form-field select {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .form-container{
+   
+    grid-template-columns: repeat(1,1fr );
+  }
+  .form-field label {
+    font-size: 14px;
+  }
+  .form-field input {
+    font-size: 12px;
+  }
+  .form-field select {
+    font-size: 12px;
+  }
+}
+

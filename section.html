@@ -6,9 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
   <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link rel="stylesheet" type="text/css" href="css/searchform.css">
+  <link rel="stylesheet" type="text/css" href="css/form1.css">
   
   <title>Student List</title>
 </head>
@@ -61,76 +60,77 @@
       </li>
     </ul>
   </div>
-  
-
-  
-    
   <div class="main">
-    <div class="list">
-      <div class="form-container-search">
-        <div class="form-field-search">
+      <div class="form-container">
+        <div class="form-field">
           <label >Student Batch:</label>
       <input type="text" id="StdName" placeholder="Student Batch">
         </div>
-        <div class="form-field-search">
+        <div class="form-field">
           <label >Semester:</label>
       <input type="text" id="StdName" placeholder="Semester">
         </div>
-        <div class="form-field-search">
+        <div class="form-field">
           <label >Branch:</label>
-      <input type="text" id="StdName" placeholder="Branch of student">
+          <select name="" id="">
+            <option value="">Select branch</option>
+            <option value="" >CSE</option>
+            <option value="">EEE</option>
+            <option value="">AIML</option>
+            <option value="">ECE</option>
+            <option value="">CIVIL</option>
+            <option value="">ISE</option>
+          </select>
         </div>
-       
-        
-        <div >
-          <button onclick="saveStudent();" class="submit-btn" >Save</button>
-          <a href="student.html"><button class="cancel-btn">Cancel</button></a>
-        </div>
-        </div>
-    </div>
-    <div class="table-card">
-      <h2>Student List</h2>
-      <table>
-        <tr>
-          <th >Name</th>
-          <th >USN</th>
-          <th >A</th>
-          <th >B</th>
-          <th >C</th>
-         
-          
-       
-        </tr>
-        <tr>
-          <td>Pramod</td>
-          <td>3VC21CS128</td>
-          
-        </tr>
-         <tr>
-          <td>Nandeesh</td>
-          <td>Sample text</td>
-          
-        </tr>
-         <tr>
-          <td>Sample text</td>
-          <td>Sample text</td>
-          
-        </tr>
-         <tr>
-          <td>Sample text</td>
-          <td>Sample text</td>
-          
-        </tr>
-         <tr>
-          <td>Sample text</td>
-          <td>Sample text</td>
-          
-        </tr>
-        
-      </table>
-      <div>
-        <canvas id="lineChart"></canvas>
+      <div >
+        <button class="btn3">Save</button>
+        <a href="student.html"><button class="btn4">Cancel</button></a>
       </div>
-    </div>
-  </div>
+        </div>
+        <div class="table-card">
+          <h2>Student List</h2>
+          <table>
+            <tr>
+              <th >Name</th>
+              <th >USN</th>
+              <th >A</th>
+              <th >B</th>
+              <th >C</th>
+             
+              
+           
+            </tr>
+            <tr>
+              <td>Pramod</td>
+              <td>3VC21CS128</td>
+              
+            </tr>
+             <tr>
+              <td>Nandeesh</td>
+              <td>Sample text</td>
+              
+            </tr>
+             <tr>
+              <td>Sample text</td>
+              <td>Sample text</td>
+              
+            </tr>
+             <tr>
+              <td>Sample text</td>
+              <td>Sample text</td>
+              
+            </tr>
+             <tr>
+              <td>Sample text</td>
+              <td>Sample text</td>
+              
+            </tr>
+            
+          </table>
+          <div>
+            <canvas id="lineChart"></canvas>
+          </div>
+        </div>
+    
+      </div>
 </div>
